@@ -28,9 +28,9 @@ export class ApolloSecurityBundle extends Bundle<IApolloSecurityBundleConfig> {
       websocket: true,
     },
     identifiers: {
-      headers: "bluelibs-token",
-      cookies: "bluelibs-token",
-      websocket: "bluelibs-token",
+      headers: "kaviar-token",
+      cookies: "kaviar-token",
+      websocket: "kaviar-token",
     },
   };
 

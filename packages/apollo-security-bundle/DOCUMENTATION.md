@@ -14,7 +14,7 @@ const kernel = new Kernel({
 
 ## Purpose
 
-This is used to detect the `userId` based on the authentication token (`bluelibs-token`) and inject it inside the GraphQL's context so you have access to it in your resolvers giving you the ability to perform authorization. On top of that it offers a seamless integration with `Passport` which gives you the ability to benefit of over 500+ authentication strategies.
+This is used to detect the `userId` based on the authentication token (`kaviar-token`) and inject it inside the GraphQL's context so you have access to it in your resolvers giving you the ability to perform authorization. On top of that it offers a seamless integration with `Passport` which gives you the ability to benefit of over 500+ authentication strategies.
 
 This package features:
 
@@ -30,7 +30,7 @@ export interface IApolloSecurityBundleConfig {
     cookies?: boolean;
     websocket?: boolean;
   };
-  // bluelibs-token is the default for all
+  // kaviar-token is the default for all
   identifiers: {
     headers?: string; // Has priority over cookies
     cookies?: string; // If no header is present it will read from here

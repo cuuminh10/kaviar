@@ -16,7 +16,7 @@ const authMiddleware = new ApolloLink((operation, forward) => {
   operation.setContext(({ headers = {} }) => {
     const newHeaders = { ...headers };
     if (authStorage.value) {
-      newHeaders["bluelibs-token"] = authStorage.value;
+      newHeaders["kaviar-token"] = authStorage.value;
     }
 
     return {
